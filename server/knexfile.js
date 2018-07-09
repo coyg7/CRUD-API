@@ -3,6 +3,12 @@
 module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/cjs-web-store'
+    connection: {
+      port: 5432,
+      host: 'localhost',
+      user: 'postgres',
+      password: 'postgresql',
+      database: 'stickers-db'
+    }
   },
 };
